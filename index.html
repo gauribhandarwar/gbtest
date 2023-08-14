@@ -7,56 +7,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#plot1">Plot 1</a></li>
-            <li><a href="#plot2">Plot 2</a></li>
-            <li><a href="#plot3">Plot 3</a></li>
-            <li><a href="#plot4">Plot 4</a></li>
-            <li><a href="#plot5">Plot 5</a></li>
-            <li><a href="#plot6">Plot 6</a></li>
-            <li><a href="#plot7">Plot 7</a></li>
-            <li><a href="#plot8">Plot 8</a></li>
-            <li><a href="#plot9">Plot 9</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="plot1">
-            <h2>Plot 1</h2>
+    <div class="slideshow-container">
+        <div class="slide" id="plot1">
             <iframe src="Plot1.html"></iframe>
-        </section>
-        <section id="plot2">
-            <h2>Plot 2</h2>
+        </div>
+        <div class="slide" id="plot2">
             <iframe src="Plot2.html"></iframe>
-        </section>
-        <section id="plot3">
-            <h2>Plot 3</h2>
+        </div>
+        <div class="slide" id="plot3">
             <iframe src="Plot3.html"></iframe>
-        </section>
-        <section id="plot4">
-            <h2>Plot 4</h2>
+        </div>
+        <div class="slide" id="plot4">
             <iframe src="Plot4.html"></iframe>
-        </section>
-        <section id="plot5">
-            <h2>Plot 5</h2>
+        </div>
+        <div class="slide" id="plot5">
             <iframe src="Plot5.html"></iframe>
-        </section>
-        <section id="plot6">
-            <h2>Plot 6</h2>
+        </div>
+        <div class="slide" id="plot6">
             <iframe src="Plot6.html"></iframe>
-        </section>
-        <section id="plot7">
-            <h2>Plot 7</h2>
+        </div>
+        <div class="slide" id="plot7">
             <iframe src="Plot7.html"></iframe>
-        </section>
-        <section id="plot8">
-            <h2>Plot 8</h2>
+        </div>
+        <div class="slide" id="plot8">
             <iframe src="Plot8.html"></iframe>
-        </section>
-        <section id="plot9">
-            <h2>Plot 9</h2>
+        </div>
+        <div class="slide" id="plot9">
             <iframe src="Plot9.html"></iframe>
-        </section>
-    </main>
+        </div>
+    </div>
+    <a class="prev" onclick="move(-1)">&#10094;</a>
+    <a class="next" onclick="move(1)">&#10095;</a>
+    <script src="script.js"></script>
 </body>
 </html>
