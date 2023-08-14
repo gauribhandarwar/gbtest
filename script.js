@@ -13,4 +13,14 @@ function showSlide(n) {
         slides[i].style.display = "none";
     }
     slides[currentSlide].style.display = "block";
+    resizeIframes(); // Call the resize function after displaying a slide
+}
+
+function resizeIframes() {
+    const iframes = document.getElementsByTagName('iframe');
+    for (let i = 0; i < iframes.length; i++) {
+        const iframe = iframes[i];
+        iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        iframe.style.width = iframe.contentWindow.document.body.scrollWidth + 'px';
+    }
 }
