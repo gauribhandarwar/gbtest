@@ -5,15 +5,16 @@ body, html {
 
 .slideshow-container {
     position: relative;
-    max-width: 100%;
-    height: 100%;
+    max-width: 800px; /* Match the width of the plots */
+    height: 600px; /* Match the height of the plots */
+    margin: auto;
 }
 
 .slide {
     display: none;
     position: relative;
     width: 100%;
-    padding-bottom: 75%; /* 4:3 Aspect Ratio, adjust as needed */
+    height: 100%;
     overflow: hidden;
 }
 
